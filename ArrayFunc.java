@@ -61,6 +61,12 @@ public class ArrayFunc {
                     }
                     break;
 
+		    //Sort array
+                case 6:
+                    Collections.sort(cars);
+                    System.out.println(cars);
+                    break;
+
                 default:
                     System.out.println("Invalid option. Try again!!!");
                     break;
