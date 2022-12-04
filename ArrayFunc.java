@@ -54,6 +54,16 @@ public class ArrayFunc {
                     }
                     break;
 
+                //Search Element
+                case 3:
+                    System.out.print("\nEnter element to search: ");
+                    String element2 = sc.next();
+                    if(cars.contains(element2)) {
+                        int pos = cars.indexOf(element2);
+                        System.out.printf("Element exist at position: %d", pos);
+                    }
+                    break;
+
                 default:
                     System.out.println("Invalid option. Try again!!!");
                     break;
