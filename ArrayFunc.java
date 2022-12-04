@@ -36,13 +36,24 @@ public class ArrayFunc {
 
             switch (option) {
 
-                //Add Element
+                // Add Element
                 case 1:
                     System.out.print("\nEnter car name to add: ");
                     String element = sc.next();
                     cars.add(element);
                     break;
-                    
+
+                // Remove Element
+                case 2:
+                    System.out.print("\nEnter car index to remove: ");
+                    int index = sc.nextInt();
+                    if (index < cars.size()) {
+                        cars.remove(index);
+                    } else {
+                        System.out.println("Invalid index");
+                    }
+                    break;
+
                 default:
                     System.out.println("Invalid option. Try again!!!");
                     break;
