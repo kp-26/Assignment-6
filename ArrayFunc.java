@@ -23,12 +23,9 @@ public class ArrayFunc {
             System.out.println("1. Add Element");
             System.out.println("2. Remove Element");
             System.out.println("3. Search Element");
-            System.out.println("4. Get Index of Element");
-            System.out.println("5. Get sublist");
-            System.out.println("6. Sort");
-            System.out.println("7. Reverse");
-            System.out.println("8. Show Elements");
-            System.out.println("9. Clear Array");
+            System.out.println("5. Sort");
+            System.out.println("6. Reverse");
+            System.out.println("7. Show Elements");
             System.out.println("0. Exit");
             System.out.println("======================");
             System.out.print("\nEnter option: ");
@@ -51,6 +48,16 @@ public class ArrayFunc {
                         cars.remove(index);
                     } else {
                         System.out.println("Invalid index");
+                    }
+                    break;
+
+                //Search Element
+                case 3:
+                    System.out.print("\nEnter element to search: ");
+                    String element2 = sc.next();
+                    if(cars.contains(element2)) {
+                        int pos = cars.indexOf(element2);
+                        System.out.printf("Element exist at position: %d", pos);
                     }
                     break;
 
