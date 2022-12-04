@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayFunc {
 
@@ -23,9 +24,9 @@ public class ArrayFunc {
             System.out.println("1. Add Element");
             System.out.println("2. Remove Element");
             System.out.println("3. Search Element");
-            System.out.println("5. Sort");
-            System.out.println("6. Reverse");
-            System.out.println("7. Show Elements");
+            System.out.println("4. Sort");
+            System.out.println("5. Reverse");
+            System.out.println("6. Show Elements");
             System.out.println("0. Exit");
             System.out.println("======================");
             System.out.print("\nEnter option: ");
@@ -61,8 +62,8 @@ public class ArrayFunc {
                     }
                     break;
 
-		    //Sort array
-                case 6:
+		        //Sort array
+                case 4:
                     Collections.sort(cars);
                     System.out.println(cars);
                     break;
