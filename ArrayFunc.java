@@ -67,6 +67,18 @@ public class ArrayFunc {
                     Collections.sort(cars);
                     System.out.println(cars);
                     break;
+                    
+               //Reverse array
+                case 5:
+                    Collections.reverse(cars);
+                    System.out.println(cars);
+                    break;
+
+                    
+                //Show Elements
+                case 6:
+                    //showCars();
+                    break;
 
                 default:
                     System.out.println("Invalid option. Try again!!!");
